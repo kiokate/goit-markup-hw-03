@@ -85,7 +85,7 @@ button {
 }
 
 .contacts-list {
-  font-style: normal;
+  margin-left: auto;
 }
 
 .contact-connection {
@@ -94,6 +94,8 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  font-style: normal;
+  align-items: center;
 }
 
 .contact-connection:hover {
@@ -108,6 +110,7 @@ button {
 
 .main-content-section {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .main-content {
@@ -123,11 +126,19 @@ button {
 .button-style {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   background: #4d5ae5;
   cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin: 0 auto;
+  gap: 10px;
 }
 .button-style:hover {
   background: #404bbf;
@@ -137,16 +148,39 @@ button {
   background-color: #404bbf;
 }
 .content-section {
-  background-color: #2e2f42;
   color: #ffffff;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
+  font-weight: 700;
+  line-height: 60px;
+  max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+.section-two {
+  padding: 120px 0;
 }
 
-.content-info-top {
+.content-title {
   color: #2e2f42;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.content-list {
+  display: flex;
+  gap: 24px;
+}
+.content-info-top {
+  width: calc((100% - 72px) / 4);
 }
 .title-three-part {
   color: #2e2f42;
@@ -154,18 +188,20 @@ button {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-}
-.content-info {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .description-content-info {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.content-info {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
@@ -178,22 +214,26 @@ button {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .main-content-team-list {
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  list-style: none;
+  display: flex;
+  gap: 24px;
 }
 
 .main-content-team-pic {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .our-team {
   background-color: #f4f4fd;
+  padding: 120px 0;
+}
+.team-person {
+  padding: 32px 0;
 }
 
 .team-photo {
@@ -208,6 +248,8 @@ button {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .main-content-team-person-job {
@@ -216,6 +258,12 @@ button {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .main-content-portfolio {
@@ -226,10 +274,28 @@ button {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.portfolio-list {
+  display: flex;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.portfolio-pic {
+  width: calc((100% - 48px) / 3);
 }
 
 .main-content-portfolio-pic {
   background: #ffffff;
+}
+.portfolio-name {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .main-content-portfolio-work {
@@ -238,6 +304,7 @@ button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .main-content-portfolio-work-description {
