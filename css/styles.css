@@ -41,7 +41,7 @@ button {
 .container {
   width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px 0 15px;
 }
 
 .section {
@@ -51,9 +51,9 @@ button {
 .header {
   background: #ffffff;
   border-bottom: 1px solid #e7e9fc;
-  padding: 24px 0;
+  padding: 24px 0 24px;
 }
-.container-header {
+.header-container {
   display: flex;
   align-items: center;
 }
